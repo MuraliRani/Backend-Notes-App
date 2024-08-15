@@ -2,7 +2,8 @@ const express = require("express")
 const { UserModel } = require("../models/UserModel")
 const salt = 5
 const userRouter = express.Router()
-const bcrypt = require("bcrypt")
+// const bcrypt = require("bcrypt")
+const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken")
 
 userRouter.get("/", (req, res)=>{
