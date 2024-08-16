@@ -14,7 +14,7 @@ const options = {
 // Connect to MongoDB
 const connectToDatabase = async () => {
   try {
-    await mongoose.connect(mongoURL, options);
+    await mongoose.connect("mongodb+srv://muralideva443:murali477@cluster0.j9eaa.mongodb.net/Notes-Application");
     console.log("MongoDB connected successfully");
   } catch (error) {
     console.error("MongoDB connection error:", error);
